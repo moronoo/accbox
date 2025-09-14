@@ -1,7 +1,7 @@
 <script setup>
 const { locale } = useI18n()
 const merchantInfo = await stateMerchant.info(true)
-const themeId = merchantInfo.website ? merchantInfo.website.theme : '2'
+const themeId = merchantInfo.website ? merchantInfo.website.theme : '1'
 
 const seoInit = (infoObj) => {
   const info = isRef(infoObj) ? infoObj.value : infoObj
